@@ -18,7 +18,7 @@ Portifólio desenvolvido todamente com fins didáticos, ensinados pela RocketSea
 <br>
 
 <p align="center">
- ![Projeto DevLinks](./assets/preview.png)
+ <img alt= "DevLinks" src=./assets/preview.png>
 </p>
 
 ## 🚀 Tecnologias
