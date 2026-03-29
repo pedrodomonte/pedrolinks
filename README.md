@@ -1,7 +1,7 @@
-<h1 align="center"> Portifólio Pedro do Monte </h1>
+<h1 align="center"> Portfólio Pedro do Monte </h1>
 
 <p align="center">
-Portifólio desenvolvido todamente com fins didáticos, ensinados pela RocketSeat
+Portfólio desenvolvido totalmente com fins didáticos, ensinados pela RocketSeat
 </p>
 
 <p align="center">
