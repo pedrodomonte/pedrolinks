@@ -18,7 +18,7 @@ Portifólio desenvolvido todamente com fins didáticos, ensinados pela RocketSea
 <br>
 
 <p align="center">
-  <img alt="Projeto DevLinks" src=".github/preview.jpg" width="100%">
+ ![Projeto DevLinks](./assets/preview.png)
 </p>
 
 ## 🚀 Tecnologias
@@ -45,7 +45,3 @@ Esse projeto está sob a licença MIT.
 ---
 
 Feito com ♥ by Rocketseat :wave: [Participe da nossa comunidade!](https://discord.gg/rocketseat)
-# Projeto
-# Teste
-# Teste
-# Teste
