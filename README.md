@@ -18,7 +18,7 @@ Portifólio desenvolvido todamente com fins didáticos, ensinados pela RocketSea
 <br>
 
 <p align="center">
- <img alt= "DevLinks" src=./assets/preview.png>
+ <img alt= "DevLinks" src=https://github.com/pedrodomonte/Teste/blob/main/.vscode/assets/preview.png>
 </p>
 
 ## 🚀 Tecnologias
