@@ -1,115 +1,124 @@
 <!doctype html>
-<html lang="PT-BR" class="ligth">
+<html lang="pt-BR" class="light">
   <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-      rel="stylesheet"
-    />
-
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>pedromonte</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Sans:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <div id="container">
+
       <div id="profile">
-        <img
-          src="./assets/avatar.png"
-          alt="foto de uma pessoa jovem, enquadrada do peito para cima.
-
-A pessoa está sentada, olhando diretamente para a câmera, com o rosto bem centralizado. A expressão é neutra, sem sorriso, parecida com foto de documento.
-
-O cabelo é escuro, curto a médio, dividido ao meio e caindo levemente para os lados. No rosto, há um leve bigode e um pouco de barba na região do queixo. A pessoa também usa um brinco pequeno em uma das orelhas.
-
-Ela veste uma camiseta escura."
-        />
-        <p>Pedro do Monte - Desenvolvedor Front-end em formação</p>
+        <div class="avatar-ring">
+          <img
+            id="avatar-img"
+            src="./assets/avatar.png"
+            alt="Foto de Pedro do Monte"
+          />
+        </div>
+        <div class="status-badge">
+          <span class="status-dot"></span>
+          Disponível para oportunidades
+        </div>
+        <h1>Pedro do Monte</h1>
+        <p class="tagline">Desenvolvedor <span>Front-end</span> em formação · BH, MG</p>
       </div>
 
-      <div id="switch" onclick="toggleMode()">
-        <button></button>
-        <span> </span>
-      </div>
+      <button id="switch" onclick="toggleMode()" aria-label="Alternar tema">
+        <span class="switch-icon"></span>
+      </button>
 
-      <div #links>
+      <div id="links">
         <ul>
-          <li>
-            <a
-              href="https://1drv.ms/w/c/bf0719a24bb235bf/IQAdl_wzd2s9RpgkWRTNXvhZAepSp5EkLd7gePUsOgsVoMs?e=KhTEbA"
-              target="_blank
-        "
-            >
-              🚀 Sobre mim</a
-            >
+          <li class="accordion-item">
+            <button class="link-btn" onclick="toggleAccordion(this)" aria-expanded="false">
+              <span class="link-icon purple">🚀</span>
+              <span class="link-text">
+                <strong>Sobre mim</strong>
+                <small>Quem é Pedro do Monte</small>
+              </span>
+              <span class="link-arrow accordion-arrow">▾</span>
+            </button>
+            <div class="accordion-body">
+              <div>
+                <p class="bio">
+                  Sou programador e técnico de informática, apaixonado por tecnologia e desenvolvimento web, sempre buscando evoluir minhas habilidades em JavaScript, React e criação de projetos próprios. Gosto de transformar ideias em soluções práticas e aprender cada vez mais sobre programação, design e tecnologia no dia a dia.
+                </p>
+                <div class="skills">
+                  <span class="skill-chip">HTML</span>
+                  <span class="skill-chip">CSS</span>
+                  <span class="skill-chip">JavaScript</span>
+                  <span class="skill-chip">React</span>
+                  <span class="skill-chip">Git</span>
+                  <span class="skill-chip">Téc. Informática</span>
+                </div>
+              </div>
+            </div>
           </li>
-
           <li>
-            <a
-              href="./assets/Currículo Pedro (1).pdf"
-              target="_blank
-        "
-              >📄 Currículo</a
-            >
+            <a href="./assets/Currículo Pedro (1).pdf" target="_blank">
+              <span class="link-icon pink">📄</span>
+              <span class="link-text">
+                <strong>Currículo</strong>
+                <small>Baixar em PDF</small>
+              </span>
+              <span class="link-arrow">↓</span>
+            </a>
           </li>
-
           <li>
-            <a
-              href="https://www.linkedin.com/in/pedro-do-monte-a228663ba/"
-              target="_blank"
-              >🤝Linkedin</a
-            >
+            <a href="https://www.linkedin.com/in/pedro-do-monte-a228663ba/" target="_blank">
+              <span class="link-icon blue">🤝</span>
+              <span class="link-text">
+                <strong>LinkedIn</strong>
+                <small>Vamos nos conectar</small>
+              </span>
+              <span class="link-arrow">↗</span>
+            </a>
           </li>
-
           <li>
             <a href="./assets/Certificado_Discover.pdf" target="_blank">
-              🎓Formações</a
-            >
+              <span class="link-icon amber">🎓</span>
+              <span class="link-text">
+                <strong>Formações</strong>
+                <small>Certificados & cursos</small>
+              </span>
+              <span class="link-arrow">↗</span>
+            </a>
           </li>
         </ul>
 
         <div id="social-links">
-          <a href="https://wa.me/5531987903474" target="_blank">
+          <a href="https://wa.me/5531987903474" target="_blank" aria-label="WhatsApp">
             <ion-icon name="logo-whatsapp"></ion-icon>
           </a>
-
-          <a href="https://instagram.com/pedrozxl7_" target="_blank">
-            <ion-icon name="logo-instagram">#</ion-icon>
+          <a href="https://instagram.com/pedrozxl7_" target="_blank" aria-label="Instagram">
+            <ion-icon name="logo-instagram"></ion-icon>
           </a>
-
-          <a
-            href="https://www.linkedin.com/in/pedro-do-monte-a228663ba/"
-            target="_blank"
-          >
+          <a href="https://www.linkedin.com/in/pedro-do-monte-a228663ba/" target="_blank" aria-label="LinkedIn">
             <ion-icon name="logo-linkedin"></ion-icon>
           </a>
-
-          <a href="https://github.com/pedrodomonte" target="_blank ">
+          <a href="https://github.com/pedrodomonte" target="_blank" aria-label="GitHub">
             <ion-icon name="logo-github"></ion-icon>
           </a>
         </div>
       </div>
+
       <footer>
         Feito por
-        <a
-          href="https://www.linkedin.com/in/pedro-do-monte-a228663ba/ "
-          target="_blank"
-          >Pedro do Monte</a
-        >
+        <a href="https://www.linkedin.com/in/pedro-do-monte-a228663ba/" target="_blank">Pedro do Monte</a>
       </footer>
+
     </div>
 
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
-    ></script>
-
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script src="./script.js"></script>
   </body>
 </html>

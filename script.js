@@ -1,25 +1,19 @@
-//pegando o html
+function toggleAccordion(btn) {
+  const isOpen = btn.getAttribute('aria-expanded') === 'true';
+  const body = btn.nextElementSibling;
 
-function toggleMode (){
-  const html=document.documentElement
-  html.classList.toggle('ligth')
+  btn.setAttribute('aria-expanded', !isOpen);
+  body.classList.toggle('open', !isOpen);
+}
 
-  //pegar a tag img//
-const img= document.querySelector( "#profile img")
+function toggleMode() {
+  const html = document.documentElement;
+  html.classList.toggle('light');
 
-//substituir a imagem//
-  if(html.classList.contains('ligth')) {
-      //se tiver ligth mode adicionar a imagem ligth//
-    img.setAttribute('src', './assets/avatar-ligth.png')
-      }
-          else{
-      //se tiver dark mode, manter a imagem normal//
- img.setAttribute('src', './assets/avatar.png')
-
+  const img = document.querySelector('#avatar-img');
+  if (html.classList.contains('light')) {
+    img.setAttribute('src', './assets/avatar-ligth.png');
+  } else {
+    img.setAttribute('src', './assets/avatar.png');
   }
-
-
-
-
-
 }
